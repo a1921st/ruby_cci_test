@@ -16,3 +16,9 @@ workflows:
   workflows:
     jobs:
       - test
+        filters:
+          branches:
+            only:
+              - develop
+              - release
+              - master
