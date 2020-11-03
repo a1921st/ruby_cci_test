@@ -15,10 +15,10 @@ workflows:
   version: 2
   workflows:
     jobs:
-      - test
-        filters:
-          branches:
-            only:
-              - develop
-              - release
-              - master
+      - test:
+          filters:
+            branches:
+              only:
+                - develop
+                - release
+                - master
